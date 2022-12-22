@@ -46,7 +46,7 @@ def gameLoop():
 
     img.save('test1.jpg')
 
-    ctypes.windll.user32.SystemParametersInfoA(20, 0, os.path.abspath("D:/Python/game in desktop/test1.jpg").encode() , 0)
+    ctypes.windll.user32.SystemParametersInfoA(20, 0, os.path.abspath("test1.jpg").encode() , 0)
 
     while game_over:
         keyboard.wait('t')
@@ -105,7 +105,7 @@ def gameLoop():
 
         img.save('test1.jpg')
 
-        ctypes.windll.user32.SystemParametersInfoA(20, 0, os.path.abspath("D:/Python/game in desktop/test1.jpg").encode() , 0)
+        ctypes.windll.user32.SystemParametersInfoA(20, 0, os.path.abspath("test1.jpg").encode() , 0)
             
         if x1 == foodx and y1 == foody:
             foodx = round(random.randrange(snakeSize, dis_width - snake_block) / 100.0) * 100.0
